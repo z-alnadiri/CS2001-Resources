@@ -23,7 +23,7 @@ nav {
 ul.navlist{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10;
     overflow: hidden;
     background-color: #333;
 }
@@ -46,11 +46,14 @@ ul.navlist li a:hover {
     background-color: #111;
 }
 
+
+
 /**** Styling for main part */
 
 main {
     border-bottom: 0.5rem solid;
     box-sizing: border-box;
+    display: flex;
     /*ToDo: Make this a flexible container; 
     You can find the following helpful: display, flex-wrap, width, min-height, height
     See lecture slides*/

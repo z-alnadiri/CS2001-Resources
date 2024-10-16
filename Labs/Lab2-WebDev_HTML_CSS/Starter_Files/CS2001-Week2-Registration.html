@@ -14,14 +14,23 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+               <li><a href=""> Home </a></li>
+               <li><a href=""> Register </a></li>
+               <li><a href=""> Login </a></li>
+               <li><a href=""> Help </a></li>
+
             </ul>
          </nav>
+
+
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <input type="search" placeholder="Search" id="searchBar">
             </aside>
             <section>
                 <form class="center" novalidate>
+                
                 <!-- ToDo: Implement the form containing 
                            Name - type text
                            email- type text
@@ -33,13 +42,40 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
-                    
-                    <input type="checkbox" id="buyer" name="buyer" value="buyer">
+                     <label for="name"> Name</label>
+                     <br>
+                    <input type="text" name="fullName" id="name"> <!-- if the 'for' in the label and the id in the input match then you can click on the label and the cursor will automatically go to the input box-->
+                <br>
+                <br>
+                    <label for="email-"> Email</label>
+                    <br>
+                    <input type="email" name="emailAddress" id="email">
+                    <br>
+
+                    <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" name="#password" id="password">
+                    <br>
+                    <br>
+                    <label for="retypePassword">Re-type Password</label>
+                    <br>
+                    <input type="password" name="password" id="retypePassword">
+                    <br>
+                    <br>
+                    <input type="checkbox" id="buyer" name="buyer" value="buyer"> 
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
+                    <br>
 
-                    <br><br>
+                    <input type="checkbox" name="Terms" id="Terms" value="agreed"> <!-- when the person submits the form and the checkbox is ticked, the server will say  Terms=agreed. if they dont then nothing will be sent-->
+                    <label for="Terms"> I agree to the <a href="">Terms of Use</a> and <a href="">Privicy Policy</a>.</label>
+                    <br>
+                    <br>
+
+                    <button>Register</button>
+                    <a href="">Learn more</a>
                 </form>
                 <div class="center" id="hiddenSection">
                     <p id="hiddenParagraph"></p>
